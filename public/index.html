@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home | Ibrahim El Ouadifi</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/styles.css">
+        <link rel="shorcut icon" type="image/ico" href="/images/favicon.ico">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    </head>
+    <body>
+        <header class="nav">
+            <!-- <img class="logo" src="images/logo.svg" alt="logo"> -->
+            <div class="logo"><a href="/" title="Ibrahim El Ouadifi">Ibrahim</a></div>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="#about" title="About me">About</a></li>
+                    <li><a href="#projects" title="My projects">Projects</a></li>
+                    <li><a href="#skills" title="My skills">Skills</a></li>
+                    <li><a href="#services" title="My services">Services</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="contact" title="Contact me"><button>Contact</button></a>
+            <a onclick="openNav()" class="menu" title="Menu"><button>Menu</button></a>
+        </header>
+        <!--video loop autoplay muted src="/background.mp4"></video-->
+        <div id="mobile__menu" class="overlay">
+            <a class="close" onclick="closeNav()">&times;</a>
+            <div class="overlay__content" onclick="closeNav()">
+                <a href="#about" onclick="closeNav()" title="About me">About</a>
+                <a href="#projects" onclick="closeNav()" title="My teams">Projects</a>
+                <a href="#skills" onclick="closeNav()" title="My skills">Skills</a>
+                <a href="#services" onclick="closeNav()" title="My services">Services</a>
+                <a class="cta" href="contact" style="margin-top: 35px;" title="Contact me"><button>Contact</button></a>
+            </div>
+        </div>
+        <script type="text/javascript" src="mobile.js"></script>
+        <div class="main-title">
+            <h1>Hi, My Name's :</h1>
+            <h2><span>Ibrahim</span> <span>El</span> <span>Ouadifi</span></h2>                
+            <h5><div style="color: #fff;">I'm a</div>&nbsp;<div class="typing" style="color: #00dc2b;"></div></h5>
+        </div>
+        <section id="about" class="about">
+            <div class="img" id="profile-img">
+                <lottie-player src="/lottie-loading-img.json"  background="transparent"  speed=".8"  style="width: 250px; height: 250px;"  loop autoplay title="My Picture"></lottie-player>
+                <!--img src="/images/Profille.jpg" alt="Ibrahim El Ouadifi Picture" title="My Picture"-->
+            </div>
+            <div class="text">
+                <h1>About me</h1>
+                <div id="about-desc">
+                    <center>
+                        <lottie-player src="/lottie-loading.json"  background="transparent"  speed=".8"  style="width: 250px; height: 200px;"  loop autoplay></lottie-player>
+                        <!------------------------------------------------>
+                    </center>
+                </div>
+                <div class="cv"><a href="/ibrahim-elouadifi-resume.pdf" target="_blank" title="Ibrahim Elouadifi Resume">Download Resume</a></div>
+            </div>
+        </section>
+
+        <section class="educations">
+
+            <h2>Education</h2>
+
+            <div class="timeline" id="timeline">  
+                <lottie-player src="/lottie-loading.json"  background="transparent"  speed=".8"  style="width: 250px; height: 200px;"  loop autoplay></lottie-player>
+                <!------------------------------------------------>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="max-width">
+                <div class="hight">
+                    <h1 class="title">Projects</h1>
+                </div>
+                <div class="cards">
+                    <div class="carousel owl-carousel" id="project-cards"></div>
+                    <lottie-player src="/lottie-loading.json"  background="transparent"  speed=".8"  style="width: 100%; height: 300px;"  loop autoplay id="load-projects"></lottie-player>
+                    <!------------------------------------------------>
+                    <!--div class="owl-prev" onclick="prev()"><button><i class="fa fa-angle-left fa-2x"></i></button></div>
+                    <div class="owl-next" onclick="next()"><button><i class="fa fa-angle-right fa-2x"></i></button></div-->
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="skills">
+            <div class="hight">
+                <h1 class="title">My skills</h1>
+            </div>
+            <div class="boxs" id="skill-cards">
+                <lottie-player src="/lottie-loading.json"  background="transparent"  speed=".8"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
+                <!------------------------------------------------>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <div class="max-width">
+                <div class="hight">
+                    <h1 class="title">Services</h1>
+                </div>                
+                <div class="serv-content" id="service-cards">
+                    <div></div>
+                    <lottie-player src="/lottie-loading.json"  background="transparent"  speed=".8"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
+                    <div></div>
+                    <!------------------------------------------------>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h5 title="copyright © 2020">copyright © 2020</h5>
+            <div class="rs">
+                <ul>
+                    <li><a href="https://www.facebook.com/IbrahimElOua98/" target="_blank" title="Facebook"><div class="btnrs"><i class="fa fa-facebook"></i></div></a></li>
+                    <li><a href="https://twitter.com/IbrahimElOua98" target="_blank" title="Twitter"><div class="btnrs"><i class="fa fa-twitter"></i></div></a></li>
+                    <li><a href="https://www.instagram.com/ibrahimeloua98/" target="_blank" title="Instagram"><div class="btnrs"><i class="fa fa-instagram"></i></div></a></li>
+                    <li><a href="https://github.com/IbrahimElOuadifi/" target="_blank" title="GitHub"><div class="btnrs"><i class="fa fa-github"></i></div></a></li>
+                    <li><a href="https://www.linkedin.com/in/ibrahim-el-ouadifi/" target="_blank" title="Linkedin"><div class="btnrs"><i class="fa fa-linkedin"></i></div></a></li>
+                </ul>
+            </div>
+        </footer>
+        <script src="/lottie-player.js"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+        <script src="/main.js"></script>
+    </body>
+</html>

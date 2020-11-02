@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contact | Ibrahim El Ouadifi</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/styles.css">
+        <link rel="shorcut icon" type="image/ico" href="/images/favicon.ico">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="nav">
+            <div class="logo"><a href="/" title="Ibrahim El Ouadifi">Ibrahim</a></div>
+            <a class="cta" href="/" title="Home page"><button>Home</button></a>
+            <a class="menu" href="/"><button title="Home page">Home</button></a>
+        </header>
+        <div class="main-contact">
+            <div class="title"><h1>Contact me</h1></div>
+            <div class="main-box">
+                <div class="left-box">
+                    <h2>Contact Info</h2>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <td>: Ibrahim El Ouadifi</td>
+                        </tr>
+                        <tr>
+                            <th>E-mail</th>
+                            <td>:&nbsp;<a href="mailto:elouadifi.ibrahim@gmail.com">elouadifi.ibrahim@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                            <th>Telephone</th>
+                            <td>: +212 (0) 632093614</td>
+                        </tr>
+                    </table>
+                    <div class="sn">
+                        <a href="https://www.facebook.com/IbrahimElOua98/" target="_blank" title="Facebook"><img src="/images/Social Network/facebook.svg" alt=""></a>
+                        <a href="https://twitter.com/IbrahimElOua98" target="_blank" title="Twitter"><img src="/images/Social Network/twitter.svg" alt=""></a>
+                        <a href="https://www.instagram.com/ibrahimeloua98/" target="_blank" title="Instagram"><img src="/images/Social Network/instagram.svg" alt=""></a>
+                        <a href="https://github.com/IbrahimElOuadifi/" target="_blank" title="GitHub"><img src="/images/Social Network/github.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="right-box">
+                    <h2>Leave your message</h2>
+                    <div class="main-form">
+                        <div class="message-form" id="msgForm">
+                            <form>
+                                <div class="txt">
+                                    <input type="text" class="text" name="name" id="name" placeholder="Your name" required>
+                                    <input type="email" class="text" name="email" id="email" placeholder="Your e-mail" required>
+                                    <input type="text" class="text" name="subj" id="subj" placeholder="Subject" required>
+                                    <textarea name="message" class="text" id="message" rows="3.9" placeholder="Your message" required></textarea>
+                                </div>
+                                <div class="btn" id="butn">
+                                    <h3 class="hide" id="sended">Message send</h3>
+                                    <button type="button" class="button" style="padding: 5px 34px;" onclick="sended()">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <h5 title="copyright © 2020">copyright © 2020</h5>
+            <div class="rs">
+                <ul>
+                    <li><a href="https://www.facebook.com/IbrahimElOua98/" target="_blank" title="Facebook"><div class="btnrs"><i class="fa fa-facebook"></i></div></a></li>
+                    <li><a href="https://twitter.com/IbrahimElOua98" target="_blank" title="Twitter"><div class="btnrs"><i class="fa fa-twitter"></i></div></a></li>
+                    <li><a href="https://www.instagram.com/ibrahimeloua98/" target="_blank" title="Instagram"><div class="btnrs"><i class="fa fa-instagram"></i></div></a></li>
+                    <li><a href="https://github.com/IbrahimElOuadifi/" target="_blank" title="GitHub"><div class="btnrs"><i class="fa fa-github"></i></div></a></li>
+                    <li><a href="https://www.linkedin.com/in/ibrahim-el-ouadifi/" target="_blank" title="Linkedin"><div class="btnrs"><i class="fa fa-linkedin"></i></div></a></li>
+                </ul>
+            </div>
+        </footer>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

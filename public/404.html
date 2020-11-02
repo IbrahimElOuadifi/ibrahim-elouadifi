@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Error 404 | Ibrahim El Ouadifi</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/styles.css">
+        <link rel="shorcut icon" type="image/ico" href="/images/favicon.ico">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--video loop autoplay muted src="/background.mp4"></video-->
+        <div class="main-404">     
+          <div class="box-404">
+              <!--h1><div>4</div><div>0</div><div>4</div></h1-->
+              <lottie-player src="/lottie-404.json"  background="transparent"  speed=".8"  style="height: 210px;"  loop autoplay></lottie-player>
+              <h2>Page Not Found</h2>
+              <p>The specified file was not found on this website.
+                <br>Please check the URL and try again.</p>
+              <div><a href="/">HOMEPAGE</a></div>
+          </div>       
+        </div>
+
+        <script src="/lottie-player.js"></script>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+
+
+        <script>
+                    // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDbZt9zuaFvWAOhVWXPa1cYWxQPlL1_-tA",
+            authDomain: "ibrahimelouadifi.firebaseapp.com",
+            databaseURL: "https://ibrahimelouadifi.firebaseio.com",
+            projectId: "ibrahimelouadifi",
+            storageBucket: "ibrahimelouadifi.appspot.com",
+            messagingSenderId: "1010244116676",
+            appId: "1:1010244116676:web:032384ddb9101ca239e991",
+            measurementId: "G-TS7ZHQYE1E"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+
+        
+        function singout(){
+            firebase.auth().signOut();
+        }    
+
+        </script>
+
+    </body>
+</html>
