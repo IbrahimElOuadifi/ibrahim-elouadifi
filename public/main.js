@@ -31,7 +31,7 @@ myInfos.child("about").once('value', function(snapshot) {
     document.getElementById("about-desc").innerHTML = '<p>' + data.description + '</p>';
 });
 
-myInfos.child("education").once('value', function(snapshot) {
+myInfos.child("timeline").child("education").once('value', function(snapshot) {
     var education = "";
     snapshot.forEach(function(childSnapshot) {
         var childKey = childSnapshot.key;
@@ -48,7 +48,27 @@ myInfos.child("education").once('value', function(snapshot) {
              '</div>' +
         '</div>' + education;
     });
-    document.getElementById("timeline").innerHTML = education;
+    document.getElementById("edu").innerHTML = education;
+});
+
+myInfos.child("timeline").child("experience").once('value', function(snapshot) {
+    var experience = "";
+    snapshot.forEach(function(childSnapshot) {
+        var childKey = childSnapshot.key;
+        var childData = childSnapshot.val();
+
+        experience = '<div class="timeline-wrapper">' +
+             '<div class="timeline-yr">' +
+                  '<span>' + childData.year + '</span>' +
+             '</div>' +
+             '<div class="timeline-info">' +
+                  '<h3><span>' + childData.title + '</span></h3>' +
+                  '<small>'+ childData.name +' | <i style="font-size:18px" class="fa"> </i> '+ childData.city +', '+ childData.country +'</small>' +
+                  '<p>'+ childData.text +'</p>' +
+             '</div>' +
+        '</div>' + experience;
+    });
+    document.getElementById("exp").innerHTML = experience;
 });
 
 myInfos.child("projects").once('value', function(snapshot) {
