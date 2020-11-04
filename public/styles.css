@@ -195,7 +195,7 @@ h1 {
     height: 100px;
     background-color: #23354b00;
     transition: all .3s ease-in;
-    z-index: 2;
+    z-index: 5;
 }
 
 .sticky {
@@ -264,7 +264,7 @@ button:hover {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 2;
+    z-index: 5;
     left: 0;
     top: 0;
     background-color: #24252A;
@@ -1063,6 +1063,39 @@ ul li {
     animation: anim-404 2.4s ease-in forwards infinite;
 }
 
+#totop {
+    display: flex;
+    position: fixed;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    background-color: #0af;
+    color: #fff;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 50%;
+    font-size: 35px;
+    transition: all .3s ease-in;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#totop:hover, #totop:active {
+    box-shadow: #0af 0 0 8px;
+}
+
+#totop .hide {
+     display: none;
+}
+
+
+#totop i {
+    cursor: pointer;
+}
+
+
 @keyframes anim-404{
     from {
         text-shadow: 0px 0px 2px #FFFF00;
@@ -1256,6 +1289,14 @@ ul li {
 
     .timeline {
         padding: 0px 18px 50px;
+    }
+
+    #totop {
+        width: 40px;
+        height: 40px;
+        bottom: 35px;
+        right: 35px;
+        font-size: 28px;
     }
 }
 

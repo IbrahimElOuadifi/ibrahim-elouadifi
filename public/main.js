@@ -164,6 +164,16 @@ $(document).ready(function(){
         }else{
             $('.nav').removeClass("sticky");
         }
+
+        if(this.scrollY > 400){
+            $('#totop').removeClass("hide");
+        }else{
+            $('#totop').addClass("hide");
+        }
+    });
+
+    $('#totop').click(function(){
+        $(window).scrollTop(0);
     });
 
     // typing text animation script
