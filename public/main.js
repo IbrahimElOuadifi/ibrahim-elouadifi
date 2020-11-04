@@ -43,7 +43,7 @@ myInfos.child("timeline").child("education").once('value', function(snapshot) {
              '</div>' +
              '<div class="timeline-info">' +
                   '<h3><span>' + childData.title + '</span></h3>' +
-                  '<small>'+ childData.name +' | <i style="font-size:18px" class="fa"> </i> '+ childData.city +', '+ childData.country +'</small>' +
+                  '<small>'+ childData.name +' | <i class="fa fa-map-marker"></i> '+ childData.location +'</small>' +
                   '<p>'+ childData.text +'</p>' +
              '</div>' +
         '</div>' + education;
@@ -63,7 +63,7 @@ myInfos.child("timeline").child("experience").once('value', function(snapshot) {
              '</div>' +
              '<div class="timeline-info">' +
                   '<h3><span>' + childData.title + '</span></h3>' +
-                  '<small>'+ childData.name +' | <i style="font-size:18px" class="fa"> </i> '+ childData.city +', '+ childData.country +'</small>' +
+                  '<small>'+ childData.name +' | <i class="fa fa-map-marker"></i> '+ childData.location +'</small>' +
                   '<p>'+ childData.text +'</p>' +
              '</div>' +
         '</div>' + experience;

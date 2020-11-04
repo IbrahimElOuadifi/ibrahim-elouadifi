@@ -149,10 +149,16 @@ body {
 
 .owl-dots{
     text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    bottom: 0;
 }
 .owl-dot{
-    height: 13px;
-    width: 13px;
+    height: 18px;
+    width: 18px;
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
@@ -160,7 +166,7 @@ body {
     transition: all 0.3s ease;
 }
 .owl-dot.active{
-    width: 35px;
+    width: 45px;
     border-radius: 14px;
 }
 .owl-dot.active,
@@ -474,7 +480,7 @@ font-size: 148px;
 .about .cv a, .about .gh a {
     color: #0ef;
     transition: all .3s ease-in-out;
-    margin: 8px 24px;
+    margin: 18px 24px;
 }
 
 .about .cv a:hover, .about .gh a:hover {
@@ -690,9 +696,11 @@ font-size: 148px;
     color: #0af;
 }
 
+/*
 .skills .box:hover .value .text {
     color: #fff;
 }
+*/
 
 .skills .value .bar {
     width: 100%; 
@@ -1140,6 +1148,11 @@ ul li {
     .about .img img {
         width: 200px;
     }
+
+    .cv-gh a {
+        margin: 14px;
+        font-size: 16px;
+    }
     
     .educations {
         padding: 0px 8px 50px;
@@ -1225,12 +1238,20 @@ ul li {
 
     .owl-nav button {
         width: 32px;
-        height: 70%;
-        top: 10%;
     }
 
     .owl-nav button i {
         font-size: 3rem;
+    }
+
+    .owl-dot {
+        height: 14px;
+        width: 14px;
+    }
+
+    .owl-dot.active{
+        width: 35px;
+        border-radius: 14px;
     }
 
     .timeline {
