@@ -126,7 +126,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 4vw;
+    font-size: 5rem;
     width: 100%;
     height: 100%;
     border-radius: 0;
@@ -146,6 +146,7 @@ body {
 .owl-nav button:focus {
     outline: none;
 }
+
 .owl-dots{
     text-align: center;
 }
@@ -202,14 +203,14 @@ h1 {
     font-family: 'Ubuntu', 'sans-serif';
     font-weight: bold;
     font-size: 35px;
-    color: #0088a9;
+    color: #0af;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
 
 .logo a:hover{
     opacity: .8;
-    text-shadow: 0 0 12px #22d3fe;
+    text-shadow: 0 0 4px #0af;
 }
 
 .nav__links {
@@ -239,7 +240,7 @@ h1 {
 
 button {
     padding: 9px 25px;
-    background-color: rgba(0,136,169,1);
+    background-color: #0af;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -247,7 +248,7 @@ button {
 }
 
 button:hover {
-    background-color: rgba(0,136,169,0.5);
+    box-shadow: #0af 0 0 8px 1px;
 }
 
 
@@ -378,7 +379,7 @@ font-size: 148px;
 .main-title h2 {
     font-size: 80px;
     padding: 18px;
-    color: #0af;
+    color: #0fa;
 
 }
 
@@ -543,6 +544,7 @@ font-size: 148px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background-color:  #23354b;
 }
 
 .timeline {
@@ -915,7 +917,6 @@ font-size: 148px;
     float: right;
     border: none;
     border-radius: 20px;
-    background-color: rgba(0,136,169,1);
     padding: 10px 35px;
     margin: 8px;
     color: #fff;
@@ -929,10 +930,6 @@ font-size: 148px;
 
 .right-box .message-form form .txt :focus {
     box-shadow: 0 0 8px 3px #fff;
-}
-
-.right-box .message-form form .btn button:hover {
-    background-color: rgba(0,136,169,.5);
 }
 
 .sended{
@@ -1003,7 +1000,6 @@ footer h5 {
 
 footer .rs ul {
     display: flex;
-    width: 50%;
     padding: 0px 25px;
     justify-content: space-evenly;
 }
@@ -1200,38 +1196,46 @@ ul li {
 
     .main-404 h1 {
         font-size: 85px;
-        }
-        
-        .main-404 h2 {
-            font-size: 24px;
-        }
-        
-        .main-404 p {
-            padding: 8px;
-            font-size: 12px;
-        }
-        
-        .main-404 div {
-            margin: 20px;
-        }
+    }
+    
+    .main-404 h2 {
+        font-size: 24px;
+    }
+    
+    .main-404 p {
+        padding: 8px;
+        font-size: 12px;
+    }
+    
+    .main-404 div {
+        margin: 20px;
+    }
 
-        #butn{
-            flex-direction: column;
-        }
+    #butn{
+        flex-direction: column;
+    }
 
-        #butn button{
-            width: 100%;
-        }
+    #butn button{
+        width: 100%;
+    }
 
-        .services .serv-content {
-            margin: 28px 8px;
-        }
+    .services .serv-content {
+        margin: 28px 8px;
+    }
 
-        .owl-nav button {
-            width: 32px;
-            height: 70%;
-            top: 10%;
-        }
+    .owl-nav button {
+        width: 32px;
+        height: 70%;
+        top: 10%;
+    }
+
+    .owl-nav button i {
+        font-size: 3rem;
+    }
+
+    .timeline {
+        padding: 0px 18px 50px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1246,5 +1250,9 @@ ul li {
 
     .box h2 {
         font-size: 15px;
+    }
+
+    footer .rs ul {
+        padding: 0px 4px;
     }
 }
