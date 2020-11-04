@@ -876,7 +876,7 @@ font-size: 148px;
 
 .sn a:nth-child(4) img:hover {
     transform: scale(1.25);
-    box-shadow: 0 0 8px 3px #222;
+    box-shadow: 0 0 8px 3px #007AB9;
 }
 
 .sn img {
