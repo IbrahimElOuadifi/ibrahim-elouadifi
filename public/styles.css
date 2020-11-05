@@ -132,15 +132,19 @@ body {
     border-radius: 0;
     background-color: #0af0;
     transition: all .2s ease-in;
-    border: solid 1px #0af;
     color: #0af;
     margin: 0;
     padding: 0;
 }
 
 .owl-nav button i:hover {
+    border: solid 1px #0af;
     background-color: #0af;
     color: #fff;
+}
+
+.owl-nav button:hover {
+    box-shadow: none;
 }
 
 .owl-nav button:focus {
@@ -834,8 +838,8 @@ font-size: 148px;
     transition: color .3s ease-in;
 }
 
-.left-box table a:hover {
-    color: #00f;
+.left-box table a:hover, .left-box table a:active {
+    color: #0af;
 }
 
 .left-box table th , .left-box table td {
@@ -1292,11 +1296,11 @@ ul li {
     }
 
     #totop {
-        width: 40px;
-        height: 40px;
-        bottom: 35px;
-        right: 35px;
-        font-size: 28px;
+        width: 50px;
+        height: 50px;
+        bottom: 50px;
+        right: 28px;
+        font-size: 32px;
     }
 }
 

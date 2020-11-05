@@ -80,7 +80,7 @@ myInfos.child("projects").once('value', function(snapshot) {
         projects += '<div class="card">' +
                 '<div class="box">' +
                     '<img src="' + childData.urlPic + '" alt="">' +
-                    '<a class="text" href="#">' + childData.name +'</a>' +
+                    '<a class="text" href="#" title="Open in GitHub">' + childData.name +'</a>' +
                     '<p>' + childData.text + '</p>' +
                 '</div>' +
             '</div>';
