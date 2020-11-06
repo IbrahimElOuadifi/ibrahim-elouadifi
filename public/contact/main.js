@@ -1,6 +1,7 @@
 // Your web app's Firebase configuration
-var firebaseConfig = {
-    apiKey: "GV9Jm2u7rmsCe65wKzPTw5jtS38n2tVEGi1_-tA",
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+    apiKey: "AIzaSyDbZt9zuaFvWAOhVWXPa1cYWxQPlL1_-tA",
     authDomain: "ibrahimelouadifi.firebaseapp.com",
     databaseURL: "https://ibrahimelouadifi.firebaseio.com",
     projectId: "ibrahimelouadifi",
@@ -9,16 +10,11 @@ var firebaseConfig = {
     appId: "1:1010244116676:web:032384ddb9101ca239e991",
     measurementId: "G-TS7ZHQYE1E"
   };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
 
-    function singout(){
-        firebase.auth().signOut();
-    }
-
-
-var contactInfo = firebase.database().ref("Messages");
+const contactInfo = firebase.database().ref("Messages");
 
 function sended() {
 

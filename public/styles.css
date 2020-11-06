@@ -24,6 +24,12 @@ body {
     background-color: #23354b;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* projects section styling */
 .projects .title {
@@ -782,7 +788,7 @@ font-size: 148px;
 
 
 .main-contact {
-    height: calc(100vh - 137px);
+    min-height: calc(100vh - 137px);
     display: flex;
     flex-wrap: nowrap;    
     justify-content: flex-start;

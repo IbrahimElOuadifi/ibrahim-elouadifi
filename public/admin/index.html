@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Pannel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shorcut icon" type="image/ico" href="/images/favicon.ico">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+
+    <div class="open-nav"></div>
+
+    <nav class="nav">
+        <div class="close-nav"><i class="fa fa-close"></i></div>
+        <button id="logout">LogOut</button>
+        <div class="cat">
+            <ul>
+                <li id="inbox">Inbox</li>
+                <li id="projects">Projects</li>
+                <li id="skills">Skills</li>
+                <li id="services">Services</li>
+                <li id="profile">Profile</li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="inbox">
+        <div class="title">
+            <h1>Inbox</h1>
+        </div>
+        <div class="content">
+            <Table id="messages-table">
+                <tr>
+                    <th id="tr">Subject</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Date</th>
+                </tr>
+                <!------------------------------->
+            </Table>
+        </div>
+        <div id="msg-page" class="content hide">
+            <button id="close-msg">Close</button>
+            <div class="msg-content" id="msg-content">
+                <h1 class="sub">Subject</h1>
+                <h2 class="name">name</h2>
+                <h2 class="email">email</h2>
+                <h5 class="date">Date</h5>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi iusto exercitationem corrupti quia? Sapiente harum distinctio, aperiam culpa, perferendis excepturi dolorem explicabo omnis dignissimos deserunt mollitia cumque ad dolor quidem rerum reprehenderit sunt praesentium incidunt? Assumenda pariatur corporis omnis, voluptas blanditiis voluptate, eaque sequi iste rem necessitatibus doloribus quo eos.</p>
+            </div>
+            <button id="delete-msg">delete</button>
+        </div>
+        <button id="clear-button"><i class="fa fa-times"></i></i></button>
+        <div id="clear-box" class="clear-box">
+            <h1>Clear All ?</h1>
+            <div>
+                <button id="clear-button-close">No</button>
+                <button id="clear-all">Yes</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="title">
+            <h1>Projects</h1>
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="title">
+            <h1>Skills</h1>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="title">
+            <h1>Services</h1>
+        </div>
+    </section>
+
+    <section class="profile">
+        <div class="title">
+            <h1>Profile</h1>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

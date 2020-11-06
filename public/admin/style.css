@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all .3s ease-in-out;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*:focus {
+    outline: none;
+}
+
+
+
+body {
+    background-color: #23354b;
+    font-family: 'Ubuntu', 'sans-serif';
+    font-weight: 600;
+    font-size: 16px;
+    color: #edf0f1;
+}
+
+.nav {
+    position: fixed;
+    width: 280px;
+    height: 100%;
+    background-color: #24252A;
+    top: 0;
+    left: -100%;
+}
+
+.active-nav {
+    left: 0;
+}
+
+.nav button {
+    position: absolute;
+    cursor: pointer;
+}
+
+.nav #logout {
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    padding: 4px 12px;
+    background-color: #0af;
+    border-radius: 8px;
+}
+
+.nav #logout:hover {
+    box-shadow: #0af 0 0 8px;
+}
+
+.open-nav {
+    width: 280px;
+    height: 50px;
+    background-color: #0af;
+    cursor: pointer;
+}
+
+.open-nav:hover {
+    box-shadow: #0af 0 0 8px;
+}
+
+.close-nav {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 58px;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border-radius: 50%;
+}
+
+.close-nav:hover i {
+    color: #f10;
+    text-shadow: #f10 0 0 4px;
+}
+
+.nav .cat {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.nav .cat ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+}
+
+.nav .cat li {
+    width: 100%;
+    font-size: 28px;
+    margin: 4px 0;
+    background-color: #0000;
+    color: #0af;
+    list-style: none;
+    padding: 8px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.nav .cat li:hover {
+    color: #fff;
+    background-color: #0af;
+}
+
+.nav .cat button {
+    width: 100%;
+}
+
+.inbox, .projects, .skills, .services, .profile {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #23354b;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.inbox .title, .projects .title, .skills .title, .services .title, .profile .title {
+    position: absolute;
+    color: #0af;
+    font-size: 48px;
+    top: 50px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.inbox .content {
+    position: absolute;
+    display: flex;
+    width: 80%;
+    height: 75%;
+    background-color: #fff;
+    top: 55%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    overflow-y: scroll;
+    color: #111;
+}
+
+.inbox .content table {
+    width: 100%;
+    max-height: 100%;
+    border-collapse: collapse;
+    color: #111; 
+}
+
+.inbox .content table th {
+    height: 80px;
+    font-size: 28px;
+    border-bottom: #0af 2px solid;
+    text-align: start;
+    padding: 0 18px;
+}
+
+.inbox .content table th:nth-child(1) {
+    width: 35%;
+}
+.inbox .content table th:nth-child(2) {
+    width: 20%;
+}
+.inbox .content table th:nth-child(3) {
+    width: 27%;
+}
+.inbox .content table th:nth-child(4) {
+    width: 18%;
+}
+
+.inbox .content table tr:hover {
+    background-color: #0af;
+    cursor: pointer;
+}
+
+.inbox .content table tr:nth-child(1):hover {
+    background-color: #0af0;
+    cursor: default;
+}
+
+.inbox .content table td {
+    font-size: 18px;
+    padding: 8px 14px;
+    text-align: start;
+    border-bottom: #0af 1px solid;
+}
+
+.inbox .content table tr td:last-child {
+    font-size: 14px;
+}
+
+.inbox .content table td a {
+    color: #111;
+}
+
+.inbox .content table td a:hover {
+    text-decoration: underline;
+}
+
+.inbox #clear-button {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #f10;
+    bottom: 40px;
+    right: 60px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.inbox #clear-button:hover, .inbox #clear-button:hover {
+    box-shadow: #f10 0 0 12px;
+}
+
+.inbox #clear-button i {
+    font-size: 50px;
+    color: #fff;
+}
+
+.inbox .content .msg-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 28px;
+}
+
+.inbox .content .msg-content h1{
+    flex-grow: 1;
+}
+
+.inbox .content .msg-content h2{
+    flex-grow: 1;
+}
+
+.inbox .content .msg-content h5{
+    flex-grow: 1;
+}
+
+.inbox .content .msg-content p{
+    flex-grow: 12;
+}
+
+.inbox .content .msg-content d {
+    margin: 28px;
+}
+
+.inbox .content button {
+    cursor: pointer;
+}
+
+.inbox .content #delete-msg {
+    position: absolute;
+    bottom: 10px;
+    right: 50%;
+    transform: translateX(50%);
+    padding: 4px 8px;
+    font-size: 2rem;
+    background-color: #f10;
+    color: #fff;
+}
+
+.inbox .content #delete-msg:hover {
+    box-shadow: #f10 0 0 8px;
+}
+
+.inbox .content #close-msg {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 4px 8px;
+    font-size: 2rem;
+    background-color: #0af;
+    color: #fff;
+}
+
+#msg-page {
+    display: none;
+}
+
+.clear-box {
+    position: fixed;
+    width: 280px;
+    height: 100px;
+    background-color: #24252A;
+    top: 100%;
+    right: 50%;
+}
+
+#clear-box h1 {
+    position: absolute;
+    top: 30%;
+    right: 50%;
+    transform: translate(50%,-50%);
+}
+
+#clear-box div {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 40%;
+    bottom: 0%;
+}
+
+#clear-box button {
+    cursor: pointer;
+    width: 50%;
+    height: 100%;
+    font-size: 20px;
+    bottom: 0;
+    color: #fff;
+    background-color: #24252A;
+}
+
+#clear-box button:hover {
+    background-color: #0af;
+}
+
+.show-box {
+    top: 50%;
+}

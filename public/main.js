@@ -1,6 +1,7 @@
 // Your web app's Firebase configuration
-var firebaseConfig = {
-    apiKey: "GV9Jm2u7rmsCe65wKzPTw5jtS38n2tVEGi1_-tA",
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+    apiKey: "AIzaSyDbZt9zuaFvWAOhVWXPa1cYWxQPlL1_-tA",
     authDomain: "ibrahimelouadifi.firebaseapp.com",
     databaseURL: "https://ibrahimelouadifi.firebaseio.com",
     projectId: "ibrahimelouadifi",
@@ -8,13 +9,14 @@ var firebaseConfig = {
     messagingSenderId: "1010244116676",
     appId: "1:1010244116676:web:032384ddb9101ca239e991",
     measurementId: "G-TS7ZHQYE1E"
-};
+  };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
-var storageRef = firebase.storage().ref("Images");
-var myInfos = firebase.database().ref("info");
+const auth = firebase.auth();
+const storageRef = firebase.storage().ref("Images");
+const myInfos = firebase.database().ref("info");
 
 storageRef.child('Profile.jpg').getDownloadURL().then(function(url) {
 
