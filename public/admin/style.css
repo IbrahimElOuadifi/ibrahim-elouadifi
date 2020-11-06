@@ -304,6 +304,7 @@ body {
     background-color: #24252A;
     top: 100%;
     right: 50%;
+	transform: translateX(50%);
 }
 
 #clear-box h1 {
@@ -336,5 +337,5 @@ body {
 }
 
 .show-box {
-    top: 50%;
+    top: 40%;
 }
