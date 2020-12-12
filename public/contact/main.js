@@ -54,9 +54,11 @@ function sended() {
         document.getElementById("sended").classList.replace("sended2","senderror");
         document.getElementById("sended").innerHTML = "Connection failed !";
         setTimeout(function() {
+
                 document.getElementById("sended").classList.replace("senderror","hide");
         }, 3000);
     } else {
+        //sendMail();
         document.getElementById("sended").classList.replace("sended2","sended");
         document.getElementById("sended").innerHTML = "Message Send";
         name.value = "";
@@ -69,3 +71,42 @@ function sended() {
     }
   });
 }
+
+
+document.getElementById("form").addEventListener("submit", e => {
+    e.preventDefault();
+
+    emailjs.sendForm('ibrahim-elouadifi-mailer', 'template_x0lqze6', e.target, 'user_s8bvn87gXD1tvCwcuEv7H')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  });
+      
+// const sendMail = () => {
+//     var nodemailer = require('nodemailer');
+
+//     var transporter = nodemailer.createTransport({
+//         service: 'gmail',
+//         auth: {
+//         user: 'ibrahim.elouadifi.mailer@gmail.com',
+//         pass: 'Mail12345@'
+//         }
+//     });
+
+//     var mailOptions = {
+//         from: 'ibrahim.elouadifi.mailer@gmail.com',
+//         to: 'elouadifi.ibrahim@gmail.com',
+//         subject: 'Email using Node.js',
+//         text: `Hello, World!`
+//     };
+
+//     transporter.sendMail(mailOptions, function(error, info){
+//         if (error) {
+//         console.log(error);
+//         } else {
+//         console.log('Email sent: ' + info.response);
+//         }
+//     });
+// }
