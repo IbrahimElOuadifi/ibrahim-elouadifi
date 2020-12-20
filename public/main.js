@@ -180,7 +180,7 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Student ^2000", "GameDev^2000"],
+        strings: ["Front-End ^1200", "Developer Junior^2000"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
